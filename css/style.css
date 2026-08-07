@@ -94,12 +94,18 @@ a {
 
 
 header {
-
     height: 72px;
     border-bottom: 1px solid var(--color-border);
-
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--color-background);
 }
 
+
+section {
+    scroll-margin-top: 72px;
+}
 
 
 nav {
