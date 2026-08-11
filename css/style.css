@@ -392,7 +392,34 @@ p {
 
 }
 
+/* =========================
+SELECTED BRAND & GRAPHIC WORK
+========================= */
 
+.selected-work-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+    margin-top: 48px;
+}
+
+.selected-work-item {
+    padding-top: 24px;
+    border-top: 1px solid var(--color-border);
+}
+
+.selected-work-item h3 {
+    margin-bottom: 8px;
+}
+
+.selected-work-item .project-type {
+    margin-bottom: 16px;
+}
+
+.selected-work-item .project-description {
+    max-width: 500px;
+    margin-bottom: 0;
+}
 /* =========================
    CONTACT
 ========================= */
