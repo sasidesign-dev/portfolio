@@ -201,40 +201,24 @@ section {
 
 
 .hero {
-
     max-width: 600px;
-
     padding-top: 80px;
-
 }
-
 
 
 .hero h1 {
 
     font-size: clamp(40px, 6vw, 72px);
-
     line-height: 1.05;
-
     font-weight: 700;
-
     letter-spacing: -0.03em;
+	padding-bottom: 20px;
 
 }
 
 
 
-.hero p {
 
-    margin-top: 24px;
-
-    max-width: 560px;
-
-    font-size: 18px;
-
-    color: var(--color-secondary);
-
-}
 
 
 
@@ -250,7 +234,79 @@ section {
 
 }
 
+/* Selected Work Images */
 
+.selected-work-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.selected-work-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius);
+    border: 1px solid var(--color-border);
+}
+
+.selected-work-images {
+    grid-template-columns: 1fr;
+}
+
+.selected-work-images figure {
+    margin: 0;
+}
+
+.selected-work-images figcaption {
+    margin-top: 8px;
+    font-size: 13px;
+    color: var(--color-secondary);
+}
+
+.selected-work-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.placeholder-box {
+    min-height: 220px;
+    border: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-secondary);
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+    .selected-work-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+.selected-work-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    margin-top: 48px;
+}
+
+.placeholder-box {
+    min-height: 220px;
+    border: 1px solid var(--color-border);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--color-secondary);
+    font-size: 14px;
+}
 
 /* =========================
    TYPOGRAPHY
@@ -392,6 +448,96 @@ p {
 
 }
 
+/* =========================
+   SELECTED BRAND PROJECTS
+   ========================= */
+
+.selected-work-item {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.selected-work-images {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.selected-work-images figure {
+    margin: 0;
+}
+
+.selected-work-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+}
+
+.selected-work-images figcaption {
+    margin-top: 12px;
+    font-size: 14px;
+    color: var(--color-secondary);
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .selected-work-images {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+}
+
+/* =========================
+   SELECTED GRAPHIC & DIGITAL
+   ========================= */
+
+.graphic-digital-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 48px 24px;
+    margin-top: 48px;
+}
+
+.graphic-digital-gallery figure {
+    margin: 0;
+}
+
+.gallery-placeholder {
+    width: 100%;
+    min-height: 280px;
+
+    border: 1px solid var(--color-border);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--color-secondary);
+    font-size: 14px;
+}
+
+.graphic-digital-gallery figcaption {
+    margin-top: 12px;
+    font-size: 14px;
+    color: var(--color-secondary);
+}
+
+
+@media (max-width: 768px) {
+
+    .graphic-digital-gallery {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+}
 
 /* =========================
    CONTACT
@@ -768,7 +914,6 @@ p {
 .project-logo {
 
     width: 100%;
-
     margin-bottom: 32px;
 
 }
